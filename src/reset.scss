@@ -1,0 +1,73 @@
+
+/* Reset des marges et des paddings */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset pour les éléments principaux */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* Les éléments de type 'body' ont besoin d'une taille de police définie */
+body {
+  line-height: 1;
+}
+
+/* Les éléments de liste non-ordonnée 'ul' et ordonnée 'ol' doivent avoir une liste-style à 'none' */
+ul, ol {
+  list-style: none;
+}
+
+/* Les éléments 'blockquote' doivent avoir une indentation */
+blockquote, q {
+  quotes: none;
+}
+
+/* Les liens visités ne doivent pas avoir de soulignement */
+a {
+  text-decoration: none;
+}
+
+/* Redéfinir les styles par défaut de certains éléments pour une meilleure cohérence */
+button, input, select, textarea {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: none;
+}
+
+/* Redéfinir les styles par défaut des éléments de formulaire */
+button, input {
+  &:focus,
+  &:active {
+    outline: none;
+  }
+}
+
+/* Redéfinir le style des éléments pour une meilleure cohérence sur différents navigateurs */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
