@@ -14,7 +14,7 @@
   );
 }
 
-:root[theme="dark"] {
+:root[theme=dark] {
   --text: #e4e8fb;
   --background: #16171d;
   --primary: #8550e7;

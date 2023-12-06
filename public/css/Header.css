@@ -1,0 +1,19 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  padding: 1em 3em;
+  align-items: center;
+  justify-content: center;
+}
+.header__title {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  margin-right: auto;
+}
+.header__title--last {
+  font-size: 2em;
+}
+.header__title--first {
+  font-size: 2em;
+}
