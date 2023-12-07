@@ -13,7 +13,7 @@ export default function SkillCard({ index }) {
       key={index}
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: index * 0.1 }}>
+      transition={{ delay: index * 0.2 }}>
       <section className="card" onClick={() => setShowModal(true)}>
         <div className="card__header">
           <h2 className="card__header__title">Langage :</h2>
