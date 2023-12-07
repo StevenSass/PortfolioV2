@@ -5,7 +5,6 @@ import ModalProjet from "../ModalProjet/ModalProjet";
 
 export default function ProjetCard({ data }) {
   const [showModal, setShowModal] = useState(false);
-  console.log(data);
   return (
     <>
       <section className="card" onClick={() => setShowModal(true)}>
