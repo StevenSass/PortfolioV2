@@ -1,0 +1,23 @@
+.modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .carousel {
+      margin-top: 15%;
+      display: flex;
+      flex-direction: row;
+      gap: 1em;
+      justify-content: center;
+    &__left {
+    }
+  
+    &__right {
+    }
+  
+    &__item {
+      width: 70%;
+    }
+  }
+  
