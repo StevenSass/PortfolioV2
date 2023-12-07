@@ -2,6 +2,7 @@ import "./Contact.scss";
 
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import { motion } from "framer-motion";
 
 const serviceId = process.env.REACT_APP_YOUR_SERVICE_ID;
 const templateId = process.env.REACT_APP_YOUR_TEMPLATE_ID;
@@ -25,7 +26,11 @@ export default function Contact() {
   };
 
   return (
-    <main className="contact">
+    <motion.main
+      className="contact"
+      initial={{ opacity: 0, scale: 0 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.5 }}>
       <h2>Contact</h2>
       <form ref={form} onSubmit={sendEmail} className="contact__form">
         <label className="contact__form__name">Nom / Prénom / Société</label>
@@ -40,6 +45,6 @@ export default function Contact() {
           className="contact__form__submit"
         />
       </form>
-    </main>
+    </motion.main>
   );
 }

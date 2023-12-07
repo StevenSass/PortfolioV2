@@ -2,11 +2,16 @@ import "./Presentation.scss";
 import { TypeAnimation } from "react-type-animation";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import { motion } from "framer-motion";
 
 export default function Presentation() {
   return (
-    <main className="pres">
-      <h2 className="pres__hello">Bonjours</h2>
+    <motion.main
+      className="pres"
+      initial={{ opacity: 0, y: -200 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}>
+      <h2 className="pres__hello">Bonjour</h2>
       <div className="pres__identity">
         <h3 className="pres__identity__one">Je m'appelle</h3>
         <h3 className="pres__identity__two">Sass</h3>
@@ -40,6 +45,6 @@ export default function Presentation() {
         <LinkedInIcon />
         <GitHubIcon />
       </div>
-    </main>
+    </motion.main>
   );
 }

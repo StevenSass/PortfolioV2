@@ -1,9 +1,13 @@
 import "./ModalCard.scss";
 import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
+import { motion } from "framer-motion";
 
 export default function ModalCard({ closeModal, data }) {
   return (
-    <>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5 }}>
       <div className="overlay" onClick={closeModal}></div>
       <div className="modal">
         <div className="modal__close">
@@ -23,6 +27,6 @@ export default function ModalCard({ closeModal, data }) {
           </ul>
         </div>
       </div>
-    </>
+    </motion.div>
   );
 }
