@@ -2,7 +2,9 @@
   "name": "portfoliov2",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://stevensass.github.io/portfoliov2/",
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.14.19",
@@ -16,6 +18,7 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.20.1",
     "react-scripts": "^5.0.1",
+    "react-type-animation": "^3.2.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

@@ -1,0 +1,39 @@
+.card {
+  width: 350px;
+  height: 200px;
+  flex: 1 1 calc(33.33% - 20px);
+  border-radius: 1em;
+  background-color: var(--text-variant);
+  border: 1px solid var(--text-variant);
+  box-shadow: 0px -2px 8px 2px var(--text-variant);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  &:hover {
+    border: 1px solid var(--accent);
+    box-shadow: 0px -2px 8px 2px var(--accent);
+  }
+  &:hover .card__header__langage {
+    color: var(--accent);
+  }
+  &__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1em;
+    &__title {
+      font-size: 2rem;
+      color: var(--text);
+    }
+
+    &__langage {
+      font-size: 2rem;
+    }
+  }
+  &__img {
+    width: 150px;
+    height: 150px;
+  }
+}

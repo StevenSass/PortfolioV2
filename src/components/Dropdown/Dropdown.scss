@@ -2,7 +2,6 @@
   display: flex;
   justify-content: center;
   gap: 1em;
-  overflow: hidden;
 
   &__section {
     &:hover .dropdown__section__content {
@@ -14,13 +13,11 @@
       flex-direction: row;
       justify-content: center;
       align-items: center;
+      cursor: pointer;
       color: var(--primary);
-      & h2 {
-        font-size: 1.8em;
-      }
       & svg {
         color: var(--text);
-        font-size: 1.8em;
+        font-size: 2.5em;
         animation: reverseRotate90 0.2s ease-in-out;
       }
       &:hover h2 {
@@ -40,14 +37,13 @@
       animation: fadeOutIn 0.4s linear forwards;
       p {
         text-align: right;
-        font-size: 1.5em;
+        font-size: 2em;
         cursor: pointer;
         color: var(--primary);
         padding: 8px 10px;
 
         &:hover {
           color: var(--accent);
-          background-color: var(--background);
         }
       }
     }

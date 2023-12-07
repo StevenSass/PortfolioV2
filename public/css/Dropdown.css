@@ -2,7 +2,6 @@
   display: flex;
   justify-content: center;
   gap: 1em;
-  overflow: hidden;
 }
 .dropdown__section:hover .dropdown__section__content {
   display: block;
@@ -13,14 +12,12 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
   color: var(--primary);
-}
-.dropdown__section__button h2 {
-  font-size: 1.8em;
 }
 .dropdown__section__button svg {
   color: var(--text);
-  font-size: 1.8em;
+  font-size: 2.5em;
   animation: reverseRotate90 0.2s ease-in-out;
 }
 .dropdown__section__button:hover h2 {
@@ -39,14 +36,13 @@
 }
 .dropdown__section__content p {
   text-align: right;
-  font-size: 1.5em;
+  font-size: 2em;
   cursor: pointer;
   color: var(--primary);
   padding: 8px 10px;
 }
 .dropdown__section__content p:hover {
   color: var(--accent);
-  background-color: var(--background);
 }
 
 @keyframes rotate90 {

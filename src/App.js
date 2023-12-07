@@ -1,14 +1,21 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
-import Home from "./pages/Home";
+
+import Nav from "./components/Nav/Nav";
+import Presentation from "./pages/Presentation/Presentation";
+import Skill from "./pages/Skill/Skill";
+import Contact from "./pages/Contact/Contact";
 
 function App() {
   return (
     <Router>
       <Header />
+      <Nav />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Presentation />} />
+        <Route path="/skill" element={<Skill />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
     </Router>

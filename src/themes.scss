@@ -1,5 +1,6 @@
 :root {
   --text: #04081b;
+  --text-variant: rgba(76, 77, 81, 0.3);
   --background: #e2e3e9;
   --primary: #4d18af;
   --secondary: #efc8f5;
@@ -16,6 +17,7 @@
 
 :root[theme="dark"] {
   --text: #e4e8fb;
+  --text-variant: rgba(228, 232, 251, 0.3);
   --background: #16171d;
   --primary: #8550e7;
   --secondary: #27062d;
@@ -37,6 +39,14 @@ h4 {
   color: var(--primary);
 }
 
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 3em;
+}
+
 p,
 li,
 div,
@@ -56,6 +66,10 @@ svg {
 }
 
 main {
-  padding: 1em 3em;
+  padding: 2em 3em;
   flex: 1 1;
+}
+
+* {
+  user-select: none;
 }

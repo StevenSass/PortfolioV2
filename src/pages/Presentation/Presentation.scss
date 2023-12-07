@@ -1,0 +1,46 @@
+.pres {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15em;
+  &__hello {
+    font-size: 10em;
+    color: var(--text);
+    opacity: 0.5;
+  }
+
+  &__identity {
+    display: flex;
+    flex-direction: row;
+    gap: 0.3em;
+    font-size: 3em;
+    &__one {
+      color: var(--text);
+    }
+  }
+
+  &__exp {
+    &--raw {
+      display: flex;
+      flex-direction: row;
+      gap: 1em;
+    }
+    font-size: 1.3em;
+    display: flex;
+    flex-direction: column;
+    &__one {
+      color: var(--primary);
+    }
+  }
+  &__link {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    & svg {
+        font-size: 2em;
+        color: var(--text);
+    }
+  }
+}
