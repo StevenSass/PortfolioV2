@@ -15,11 +15,11 @@ function App() {
       <Header />
       <Nav />
       <Routes>
-        <Route path="/" element={<Presentation />} />
-        <Route path="/skill" element={<Skill />} />
-        <Route path="/projet" element={<Projet />} />
-        <Route path="/parcours" element={<Parcours />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/PortfolioV2/" element={<Presentation />} />
+        <Route path="/PortfolioV2/skill" element={<Skill />} />
+        <Route path="/PortfolioV2/projet" element={<Projet />} />
+        <Route path="/PortfolioV2/parcours" element={<Parcours />} />
+        <Route path="/PortfolioV2/contact" element={<Contact />} />
       </Routes>
       <Footer />
     </Router>

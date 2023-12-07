@@ -9,19 +9,19 @@ import { NavLink } from "react-router-dom";
 export default function Nav() {
   return (
     <nav className="nav">
-      <NavLink className="nav__link" to="/">
+      <NavLink className="nav__link" to="/PortfolioV2/">
         <PermIdentityRoundedIcon />
       </NavLink>
-      <NavLink className="nav__link" to="/skill">
+      <NavLink className="nav__link" to="/PortfolioV2/skill">
         <ChecklistRoundedIcon />
       </NavLink>
-      <NavLink className="nav__link" to="/projet">
+      <NavLink className="nav__link" to="/PortfolioV2/projet">
         <ArtTrackRoundedIcon />
       </NavLink>
-      <NavLink className="nav__link" to="/parcours">
+      <NavLink className="nav__link" to="/PortfolioV2/parcours">
         <TimelineRoundedIcon />
       </NavLink>
-      <NavLink className="nav__link" to="/contact">
+      <NavLink className="nav__link" to="/PortfolioV2/contact">
         <SendRoundedIcon />
       </NavLink>
     </nav>
