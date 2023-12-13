@@ -3,6 +3,7 @@ import { TypeAnimation } from "react-type-animation";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 export default function Presentation() {
   return (
@@ -42,8 +43,10 @@ export default function Presentation() {
         </div>
       </div>
       <div className="pres__link">
-        <LinkedInIcon />
-        <GitHubIcon />
+        {/* <LinkedInIcon /> */}
+        <Link to="https://github.com/StevenSass">
+          <GitHubIcon />
+        </Link>
       </div>
     </motion.main>
   );

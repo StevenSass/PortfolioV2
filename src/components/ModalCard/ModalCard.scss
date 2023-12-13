@@ -17,7 +17,7 @@
   z-index: 10;
   width: 40%;
   background-color: var(--background);
-  border: 1px solid var(--accent);
+  border: 1px solid var(--primary);
   border-radius: 10px;
   height: fit-content;
   @media screen and (max-width: 1300px) {
@@ -53,7 +53,10 @@
       border-radius: 5px;
       width: 2em;
       height: 2em;
-      background-color: var(--accent);
+      background-color: var(--primary);
+      &:hover {
+        background-color: var(--accent);
+      }
     }
   }
   &__content {
@@ -64,7 +67,7 @@
       align-items: center;
       gap: 1em;
       & h2 {
-        color: var(--accent);
+        color: var(--primary);
       }
       & img {
         width: 50px;
