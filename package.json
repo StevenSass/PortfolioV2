@@ -2,7 +2,7 @@
   "name": "portfoliov2",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://stevensass.github.io/PortfolioV2/",
+  "homepage": "http://sass-steven.fr/",
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
     "@emotion/react": "^11.11.1",

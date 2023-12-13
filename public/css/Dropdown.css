@@ -1,0 +1,94 @@
+.dropdown {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+.dropdown__section:hover .dropdown__section__content {
+  display: block;
+  animation: fadeInOut 0.4s linear forwards;
+}
+.dropdown__section__button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: var(--primary);
+}
+.dropdown__section__button svg {
+  color: var(--text);
+  font-size: 2.5em;
+  animation: reverseRotate90 0.2s ease-in-out;
+}
+@media screen and (max-width: 700px) {
+  .dropdown__section__button svg {
+    font-size: 1.5em;
+  }
+}
+@media screen and (max-width: 700px) {
+  .dropdown__section__button h2 {
+    font-size: 1.5em;
+  }
+}
+.dropdown__section__button:hover h2 {
+  color: var(--accent);
+}
+.dropdown__section__button:hover svg {
+  animation: rotate90 0.2s ease-in-out forwards;
+}
+.dropdown__section__content {
+  display: none;
+  position: absolute;
+  right: 2em;
+  min-width: 60px;
+  z-index: 1;
+  animation: fadeOutIn 0.4s linear forwards;
+}
+.dropdown__section__content p {
+  text-align: right;
+  font-size: 2em;
+  cursor: pointer;
+  color: var(--primary);
+  padding: 8px 10px;
+}
+@media screen and (max-width: 700px) {
+  .dropdown__section__content p {
+    font-size: 1em;
+  }
+}
+.dropdown__section__content p:hover {
+  color: var(--accent);
+}
+
+@keyframes rotate90 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(90deg);
+  }
+}
+@keyframes reverseRotate90 {
+  from {
+    transform: rotate(90deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+@keyframes fadeInOut {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeOutIn {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}

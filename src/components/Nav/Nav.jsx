@@ -8,22 +8,24 @@ import { NavLink } from "react-router-dom";
 
 export default function Nav() {
   return (
-    <nav className="nav">
-      <NavLink className="nav__link" exact to="/PortfolioV2/">
-        <PermIdentityRoundedIcon />
-      </NavLink>
-      <NavLink className="nav__link" exact to="/PortfolioV2/skill">
-        <ChecklistRoundedIcon />
-      </NavLink>
-      <NavLink className="nav__link" exact to="/PortfolioV2/projet">
-        <ArtTrackRoundedIcon />
-      </NavLink>
-      <NavLink className="nav__link" exact to="/PortfolioV2/parcours">
-        <TimelineRoundedIcon />
-      </NavLink>
-      <NavLink className="nav__link" exact to="/PortfolioV2/contact">
-        <SendRoundedIcon />
-      </NavLink>
-    </nav>
+    <div className="responsive-nav">
+      <nav className="nav">
+        <NavLink className="nav__link" exact to="/">
+          <PermIdentityRoundedIcon />
+        </NavLink>
+        <NavLink className="nav__link" exact to="/skill">
+          <ChecklistRoundedIcon />
+        </NavLink>
+        <NavLink className="nav__link" exact to="/projet">
+          <ArtTrackRoundedIcon />
+        </NavLink>
+        <NavLink className="nav__link" exact to="/parcours">
+          <TimelineRoundedIcon />
+        </NavLink>
+        <NavLink className="nav__link" exact to="/contact">
+          <SendRoundedIcon />
+        </NavLink>
+      </nav>
+    </div>
   );
 }

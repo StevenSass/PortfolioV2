@@ -9,6 +9,12 @@
     font-size: 10em;
     color: var(--text);
     opacity: 0.5;
+    @media screen and (max-width: 1500px) {
+      font-size: 8em;
+    }
+    @media screen and (max-width: 700px) {
+      font-size: 4em;
+    }
   }
 
   &__identity {
@@ -19,9 +25,27 @@
     &__one {
       color: var(--text);
     }
+    @media screen and (max-width: 1500px) {
+      font-size: 2.5em;
+    }
+    @media screen and (max-width: 700px) {
+      font-size: 1em;
+    }
+  }
+  &__type {
+    font-size: 2em;
+    @media screen and (max-width: 1500px) {
+      font-size: 1.5em;
+    }
+    @media screen and (max-width: 700px) {
+      font-size: 1em;
+    }
   }
 
   &__exp {
+    @media screen and (max-width: 700px) {
+      font-size: 1em;
+    }
     &--raw {
       display: flex;
       flex-direction: row;
@@ -39,8 +63,11 @@
     flex-direction: row;
     gap: 1em;
     & svg {
-        font-size: 2em;
-        color: var(--text);
+      font-size: 2em;
+      color: var(--text);
+      @media screen and (max-width: 700px) {
+        font-size: 1.5em;
+      }
     }
   }
 }

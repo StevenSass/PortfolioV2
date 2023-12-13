@@ -11,6 +11,7 @@ const publicId = process.env.REACT_APP_YOUR_PUBLIC_ID;
 export default function Contact() {
   const form = useRef();
 
+  // function pour envoyer les info a emailjs
   const sendEmail = (e) => {
     e.preventDefault();
 

@@ -1,0 +1,87 @@
+.pres {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15em;
+}
+.pres__hello {
+  font-size: 10em;
+  color: var(--text);
+  opacity: 0.5;
+}
+@media screen and (max-width: 1500px) {
+  .pres__hello {
+    font-size: 8em;
+  }
+}
+@media screen and (max-width: 700px) {
+  .pres__hello {
+    font-size: 4em;
+  }
+}
+.pres__identity {
+  display: flex;
+  flex-direction: row;
+  gap: 0.3em;
+  font-size: 3em;
+}
+.pres__identity__one {
+  color: var(--text);
+}
+@media screen and (max-width: 1500px) {
+  .pres__identity {
+    font-size: 2.5em;
+  }
+}
+@media screen and (max-width: 700px) {
+  .pres__identity {
+    font-size: 1em;
+  }
+}
+.pres__type {
+  font-size: 2em;
+}
+@media screen and (max-width: 1500px) {
+  .pres__type {
+    font-size: 1.5em;
+  }
+}
+@media screen and (max-width: 700px) {
+  .pres__type {
+    font-size: 1em;
+  }
+}
+.pres__exp {
+  font-size: 1.3em;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 700px) {
+  .pres__exp {
+    font-size: 1em;
+  }
+}
+.pres__exp--raw {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+.pres__exp__one {
+  color: var(--primary);
+}
+.pres__link {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+.pres__link svg {
+  font-size: 2em;
+  color: var(--text);
+}
+@media screen and (max-width: 700px) {
+  .pres__link svg {
+    font-size: 1.5em;
+  }
+}

@@ -1,0 +1,112 @@
+.parcours {
+  padding: 10em 5em 3em 5em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  min-height: 23em;
+}
+@media screen and (max-width: 700px) {
+  .parcours {
+    padding: 2em 0em;
+  }
+}
+.parcours h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 700px) {
+  .parcours h2 {
+    font-size: 2em;
+  }
+}
+.parcours__timeline {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.parcours__timeline__dot {
+  z-index: 2;
+  width: 15px;
+  height: 15px;
+  border: solid 4px var(--primary);
+  padding: 3px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+@media screen and (max-width: 700px) {
+  .parcours__timeline__dot {
+    width: 8px;
+    height: 8px;
+  }
+}
+.parcours__timeline__dot:hover {
+  border: solid 4px var(--accent);
+}
+.parcours__timeline__dot:hover.selected {
+  background-color: var(--accent);
+}
+.parcours__timeline__dot.selected {
+  background-color: var(--primary);
+}
+.parcours__timeline__bar {
+  margin: 0px -2px;
+  display: flex;
+  justify-self: center;
+  text-align: center;
+  width: 10%;
+  border: solid 3px var(--primary);
+}
+@media screen and (max-width: 1100px) {
+  .parcours__timeline__bar {
+    width: 5%;
+  }
+}
+.parcours__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}
+.parcours__content__header {
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+  justify-content: center;
+  align-items: center;
+  padding: 0em 1em;
+}
+.parcours__content__header__title {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+  justify-content: center;
+}
+.parcours__content__header__title h2 {
+  font-size: 2em;
+}
+@media screen and (max-width: 700px) {
+  .parcours__content__header__title h2 {
+    font-size: 1em;
+  }
+}
+.parcours__content__header__title h3 {
+  font-size: 1.6em;
+}
+@media screen and (max-width: 700px) {
+  .parcours__content__header__title h3 {
+    font-size: 1em;
+  }
+}
+.parcours__content__text {
+  font-size: 2em;
+  min-height: 5em;
+  width: 60%;
+}
+@media screen and (max-width: 700px) {
+  .parcours__content__text {
+    font-size: 1em;
+  }
+}

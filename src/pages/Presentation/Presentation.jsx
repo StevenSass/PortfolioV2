@@ -28,7 +28,7 @@ export default function Presentation() {
         wrapper="span"
         cursor={true}
         repeat={Infinity}
-        style={{ fontSize: "2em", display: "inline-block" }}
+        className="pres__type"
       />
 
       <div className="pres__exp--raw">

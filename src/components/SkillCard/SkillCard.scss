@@ -11,6 +11,12 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  @media screen and (max-width: 1600px) {
+    max-width: 250px;
+    max-height: 175px;
+    gap: 1em;
+  }
+
   &:hover {
     border: 1px solid var(--accent);
     box-shadow: 0px -2px 8px 2px var(--accent);
@@ -23,9 +29,16 @@
     flex-direction: row;
     justify-content: center;
     gap: 1em;
+    @media screen and (max-width: 1600px) {
+      & h2 {
+        font-size: 1.5rem;
+      }
+      
+    }
     &__title {
       font-size: 2rem;
       color: var(--text);
+      
     }
 
     &__langage {
@@ -36,5 +49,9 @@
     object-fit: scale-down;
     width: 150px;
     height: 150px;
+    @media screen and (max-width: 1600px) {
+      max-width: 100px;
+      max-height: 100px;
+    }
   }
 }

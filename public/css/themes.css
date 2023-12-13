@@ -15,7 +15,7 @@
   );
 }
 
-:root[theme="dark"] {
+:root[theme=dark] {
   --text: #e4e8fb;
   --text-variant: rgba(228, 232, 251, 0.3);
   --background: #16171d;
