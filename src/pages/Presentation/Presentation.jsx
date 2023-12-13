@@ -44,7 +44,10 @@ export default function Presentation() {
       </div>
       <div className="pres__link">
         {/* <LinkedInIcon /> */}
-        <Link to="https://github.com/StevenSass">
+        <Link
+          to="https://github.com/StevenSass"
+          target="_blank"
+          rel="noopener noreferrer">
           <GitHubIcon />
         </Link>
       </div>
