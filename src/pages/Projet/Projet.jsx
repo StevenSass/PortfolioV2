@@ -33,7 +33,7 @@ export default function Projet() {
         <h3>
           Voici quelques projets. Si vous souhaitez voir tous mes projets, je
           vous invite à regarder mon
-          <Link to="https://github.com/StevenSass">GitHub</Link>.
+          <Link to="https://github.com/StevenSass"> GitHub</Link>.
         </h3>
       </div>
       {!isOpen ? (
