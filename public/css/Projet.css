@@ -68,6 +68,9 @@
   color: var(--text);
   font-size: 1.8em;
 }
+.projet__header h3 a {
+  text-decoration: underline;
+}
 .projet__header h3 a:hover {
   color: var(--accent);
 }
