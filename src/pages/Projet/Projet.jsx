@@ -5,6 +5,7 @@ import ZoomInRoundedIcon from "@mui/icons-material/ZoomInRounded";
 import ZoomOutRoundedIcon from "@mui/icons-material/ZoomOutRounded";
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 export default function Projet() {
   const [toggleAnimation, setToggleAnimation] = useState(true);
@@ -31,7 +32,8 @@ export default function Projet() {
         <h2>Projet :</h2>
         <h3>
           Voici quelques projets. Si vous souhaitez voir tous mes projets, je
-          vous invite à regarder mon GitHub.
+          vous invite à regarder mon
+          <Link to="https://github.com/StevenSass"> GitHub.</Link>
         </h3>
       </div>
       {!isOpen ? (
