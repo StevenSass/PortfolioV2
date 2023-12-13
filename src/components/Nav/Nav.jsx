@@ -10,19 +10,19 @@ export default function Nav() {
   return (
     <div className="responsive-nav">
       <nav className="nav">
-        <NavLink className="nav__link" exact to="/">
+        <NavLink className="nav__link" exact="true" to="/">
           <PermIdentityRoundedIcon />
         </NavLink>
-        <NavLink className="nav__link" exact to="/skill">
+        <NavLink className="nav__link" exact="true" to="/skill">
           <ChecklistRoundedIcon />
         </NavLink>
-        <NavLink className="nav__link" exact to="/projet">
+        <NavLink className="nav__link" exact="true" to="/projet">
           <ArtTrackRoundedIcon />
         </NavLink>
-        <NavLink className="nav__link" exact to="/parcours">
+        <NavLink className="nav__link" exact="true" to="/parcours">
           <TimelineRoundedIcon />
         </NavLink>
-        <NavLink className="nav__link" exact to="/contact">
+        <NavLink className="nav__link" exact="true" to="/contact">
           <SendRoundedIcon />
         </NavLink>
       </nav>
