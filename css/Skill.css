@@ -1,0 +1,26 @@
+.skill {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1.5em;
+  justify-content: center;
+  align-items: center;
+  padding: 2em 15em;
+  align-content: center;
+}
+@media screen and (max-width: 768px) {
+  .skill__title {
+    font-size: 2.4em;
+  }
+}
+@media screen and (max-width: 707px) {
+  .skill__title {
+    font-size: 2em;
+  }
+}
+@media screen and (max-width: 700px) {
+  .skill {
+    padding: 2em 0em;
+    flex-direction: column;
+  }
+}
