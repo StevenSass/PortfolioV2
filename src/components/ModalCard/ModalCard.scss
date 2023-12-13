@@ -1,13 +1,13 @@
-.overlay {
+.overlayCard {
   position: fixed;
   inset: 0px;
-  background-color: var(--primary);
-  opacity: 0.5;
+  background-color: var(--background);
+  opacity: 0.8;
   z-index: 5;
   cursor: pointer;
 }
 
-.modal {
+.modalCard {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -19,11 +19,27 @@
   background-color: var(--background);
   border: 1px solid var(--accent);
   border-radius: 10px;
+  height: fit-content;
+  @media screen and (max-width: 1300px) {
+    width: 60%;
+    left: 20%;
+  }
+  @media screen and (max-width: 700px) {
+    width: 100%;
+    left: 0%;
+    inset: 0%;
+    border-radius: 0px;
+    border: none;
+    height: 100%;
+  }
   &__close {
     padding: 1em;
     width: 95%;
     display: flex;
     justify-content: flex-end;
+    @media screen and (max-width: 700px) {
+      margin-bottom: 25%;
+    }
     &__button {
       & svg {
         width: 1.3em;
@@ -41,26 +57,29 @@
     }
   }
   &__content {
-
     &__header {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 1em;
-        & h2 {
-            color: var(--accent);
-        }
-        & img {
-            width: 50px;
-        }
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 1em;
+      & h2 {
+        color: var(--accent);
+      }
+      & img {
+        width: 50px;
+      }
     }
     &__text {
-        font-size: 1.2em;
-        padding: 2em 5em;
-        display: flex;
-        flex-direction: column;
-        gap: 1em;
+      height: 100%;
+      font-size: 1.2em;
+      padding: 2em 5em;
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+      @media screen and (max-width: 500px) {
+        padding: 3em 1em;
+      }
     }
   }
 }

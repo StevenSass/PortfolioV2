@@ -8,19 +8,19 @@ export default function ModalCard({ closeModal, data }) {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}>
-      <div className="overlay" onClick={closeModal}></div>
-      <div className="modal">
-        <div className="modal__close">
-          <div className="modal__close__button" onClick={closeModal}>
+      <div className="overlayCard" onClick={closeModal}></div>
+      <div className="modalCard">
+        <div className="modalCard__close">
+          <div className="modalCard__close__button" onClick={closeModal}>
             <CloseRoundedIcon />
           </div>
         </div>
-        <div className="modal__content">
-          <div className="modal__content__header">
+        <div className="modalCard__content">
+          <div className="modalCard__content__header">
             <h2>{data.langage}</h2>
             <img src={data.logo} alt="" />
           </div>
-          <ul className="modal__content__text">
+          <ul className="modalCard__content__text">
             {data.description.map((langage, i) => (
               <li key={i + langage}>{langage}</li>
             ))}
