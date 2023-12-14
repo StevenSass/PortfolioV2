@@ -35,8 +35,18 @@
   font-size: 2rem;
   color: var(--text);
 }
+@media screen and (max-width: 1100px) {
+  .card__header__title {
+    font-size: 1.5rem;
+  }
+}
 .card__header__langage {
   font-size: 2rem;
+}
+@media screen and (max-width: 1100px) {
+  .card__header__langage {
+    font-size: 1.5rem;
+  }
 }
 .card__img {
   object-fit: scale-down;

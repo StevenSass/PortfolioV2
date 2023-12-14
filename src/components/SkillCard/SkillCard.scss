@@ -31,19 +31,12 @@
     justify-content: center;
     gap: 1em;
     @media screen and (max-width: 1600px) {
-      & h2 {
+      &__langage {
         font-size: 1.5rem;
       }
-      
     }
-    &__title {
-      font-size: 2rem;
-      color: var(--text);
-      
-    }
-
     &__langage {
-      font-size: 2rem;
+      font-size: 1.5rem;
     }
   }
   &__img {

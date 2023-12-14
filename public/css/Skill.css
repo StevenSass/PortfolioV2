@@ -5,7 +5,7 @@
   gap: 1.5em;
   justify-content: center;
   align-items: center;
-  padding: 2em 15em;
+  padding: 1em 15em;
   align-content: center;
 }
 @media screen and (max-width: 768px) {
@@ -23,4 +23,11 @@
     padding: 2em 0em;
     flex-direction: column;
   }
+}
+
+.skill-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

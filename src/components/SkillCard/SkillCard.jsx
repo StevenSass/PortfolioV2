@@ -16,7 +16,6 @@ export default function SkillCard({ index }) {
       transition={{ delay: index * 0.2 }}>
       <section className="card" onClick={() => setShowModal(true)}>
         <div className="card__header">
-          <h2 className="card__header__title">Langage :</h2>
           <h2 className="card__header__langage">{dataIndex.langage}</h2>
         </div>
         <img src={dataIndex.logo} alt="img" className="card__img" />

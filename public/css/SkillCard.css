@@ -34,16 +34,12 @@
   gap: 1em;
 }
 @media screen and (max-width: 1600px) {
-  .card__header h2 {
+  .card__header__langage {
     font-size: 1.5rem;
   }
 }
-.card__header__title {
-  font-size: 2rem;
-  color: var(--text);
-}
 .card__header__langage {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 .card__img {
   object-fit: scale-down;
